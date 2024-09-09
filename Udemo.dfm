@@ -17,7 +17,24 @@ object Form1: TForm1
     Width = 905
     Height = 217
     Align = alTop
+    Lines.Strings = (
+      '<xmlcep>'
+      '<cep>78552-442</cep>'
+      '<logradouro>Rua dos Angelins</logradouro>'
+      '<complemento>at'#233' 189/190</complemento>'
+      '<unidade/>'
+      '<bairro>Jardim das Oliveiras</bairro>'
+      '<localidade>Sinop</localidade>'
+      '<uf>MT</uf>'
+      '<estado>Mato Grosso</estado>'
+      '<regiao>Centro-Oeste</regiao>'
+      '<ibge>5107909</ibge>'
+      '<gia/>'
+      '<ddd>66</ddd>'
+      '<siafi>8985</siafi>'
+      '</xmlcep>')
     TabOrder = 0
+    ExplicitWidth = 903
   end
   object Button1: TButton
     Left = 312
@@ -26,6 +43,7 @@ object Form1: TForm1
     Height = 57
     Caption = 'Converter'
     TabOrder = 1
+    OnClick = Button1Click
   end
   object mjson: TMemo
     Left = 0
@@ -34,5 +52,7 @@ object Form1: TForm1
     Height = 306
     Align = alBottom
     TabOrder = 2
+    ExplicitTop = 360
+    ExplicitWidth = 903
   end
 end

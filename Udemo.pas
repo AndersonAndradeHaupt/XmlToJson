@@ -11,6 +11,7 @@ type
     mxml: TMemo;
     Button1: TButton;
     mjson: TMemo;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +24,13 @@ var
 implementation
 
 {$R *.dfm}
+
+uses SimpleXMLToJSONReader;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  mjson.Text := TSimpleXMLToJSONReader.New
+                .ConvertXMLToJSON(mxml.Text)  ;
+end;
 
 end.
