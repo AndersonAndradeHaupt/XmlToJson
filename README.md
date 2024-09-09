@@ -22,7 +22,7 @@ O objetivo deste projeto é facilitar a conversão de XML para JSON no Delphi, p
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/AndersonAndradeHaupt/SimpleXMLToJSONReader.git
+    git clone https://github.com/AndersonAndradeHaupt/XmlToJson.git
     ```
 
 2. Abra o projeto no Delphi.
